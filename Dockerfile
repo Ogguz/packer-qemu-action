@@ -7,6 +7,7 @@ LABEL "repository" = "https://github.com/enr0s/packer-build-action"
 LABEL "homepage" = "https://github.com/enr0s/packer-build-action"
 LABEL "maintainer" = "enr0s <info@enros.me>"
 
+RUN apt-get install kvm qemu -y
 RUN --security=insecure modprobe kvm-intel
 
 COPY entrypoint.sh /entrypoint.sh
