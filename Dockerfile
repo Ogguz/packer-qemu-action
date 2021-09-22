@@ -7,6 +7,7 @@ LABEL "repository" = "https://github.com/enr0s/packer-build-action"
 LABEL "homepage" = "https://github.com/enr0s/packer-build-action"
 LABEL "maintainer" = "enr0s <info@enros.me>"
 
+COPY aa.json aa.json
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
